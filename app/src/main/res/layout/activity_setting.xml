@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+    <ImageView
+        android:id="@+id/save_btn"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/done_img_foreground"
+
+        android:layout_gravity="right"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_width="2dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:civ_border_color="@color/black"/>
+
+    <EditText
+        android:id="@+id/setting_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/spartan_bold"
+        android:text="User Name"
+        android:gravity="center"
+        android:background="@null"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+
+
+        />
+
+    <EditText
+        android:id="@+id/setting_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spartan_bold"
+        android:text="Hey there i m using \n using this app"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@null"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="normal"
+
+
+        />
+
+</LinearLayout>
